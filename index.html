@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>徐波简历</title>
     <style>
         body {
             color: #555555;
             font-family: "Sans-serif";
+            display: flex;
+            flex-direction: column;
         }
         
         .head {
@@ -19,7 +20,6 @@
         
         .skill {
             width: 90%;
-            height: 100px;
             margin: 0 auto;
             position: relative;
         }
@@ -28,12 +28,13 @@
             font-weight: 800;
             font-size: 18px;
             margin-top: 20px;
+            margin-bottom: 10px;
         }
         
         .line {
-            background-color: #000000;
+            background-color: rgba(0, 0, 0, 0.3);
             width: 100%;
-            height: 2px;
+            height: 1px;
         }
         
         h3 {
@@ -62,38 +63,41 @@
 
 <body bgcolor="#fff">
     <div class="head">
-        <h3>姓名：徐波</h3>
-        <p style="margin-bottom:3px ">电话：15625297106 | 邮箱：xsir99@gmail.com | 地址：深圳 </p>
-        <p style="margin-bottom:3px ">学历：2013年毕业&&黄冈师范学院&&本科 | 工作经验：6年 </p>
-        <p>个人网站：www.baidu.com | 求职意向：python开发工程师 </p>
+        <h3>个人简历</h3>
     </div>
     <div class="skill">
         <div class="content">
-            <div class="txt_title">个人简介</div>
+            <div class="txt_title">基本信息</div>
             <div class="line"></div>
             <ul>
-                <li>两年python后端开发经验，使用Django主流框架进行WEB开发，阅读过Django当中部分模块的源码，对其实现原理有一定的了解。</li>
-                <li>多年Erlang后端开发经验，熟悉EMQX(EMQTT)的原理用法以及集群部署</li>
-                <li>熟悉PostgreSQL数据库的基本原理和用法，熟悉MongoDB、Redis、Riak等NoSQL数据库</li>
-                <li>熟悉Docker容器化，熟悉docker-compose</li>
-                <li>熟悉Shell脚本、Linux操作系统和常见命令</li>
+                <li>姓名：徐波/男/1989</li>
+                <li>工作经验：7年</li>
+                <li>毕业院校：黄冈师范学院/电子信息/本科</li>
+                <li>求职意向：后端开发工程师 </li>
+                <li>Github：<a href="https://github.com/xsir99">github.com/xsir99</a></li>
+                <li>电话/微信：15625297106</li>
+                <li>邮箱：<a href="mailto:xsir99@gmail.com">xsir99@gmail.com</a> </li>
             </ul>
         </div>
         <div class="content">
             <div class="txt_title">专业技能</div>
             <div class="line"></div>
             <ul>
-                <li>编程语言：Python/Golang/Erlang/Javascript</li>
-                <li>后端框架：Django/Cowboy/EMQX/Gin</li>
-                <li>前端框架：VUE/微信小程序</li>
-                <li>数据库：PostgreSQL/Redis/MongoDB/MySQL</li>
-                <li>中间件：RabbitMQ</li>
-                <li>DevOps：Docker/Git/Gitlab-CI/CD</li>
+                <li>掌握python、erlang开发语言，了解golang、js等编程语言</li>
+                <li>熟练操作postgresql、redis、mongodb数据库，掌握sql语句存储过程的运用</li>
+                <li>熟练运用django(python)、cowboy(Erlang)、gin(golang)等进行web开发</li>
+                <li>熟悉EMQX(EMQTT) MQTT服务器的原理用法以及集群部署，熟悉使用RabbitMQ消息队列</li>
+                <li>熟悉Docker容器化，熟悉docker-compose使用</li>
+                <li>了解html、css、js、vue、微信小程序等前端基础知识</li>
+                <li>熟练使用git进行版本控制和代码托管、Markdown进行文档编写。了解gitlab CI/CD，了解项目常规开发流程、开发调试技巧、发布部署步骤。掌握类unix系统的运维能力</li>
+                <li>熟悉Windows、Linux(ubuntu)、Mac 环境下的开发部署，熟悉Shell脚本、Linux操作系统和常见命令</li>
+
+            </ul>
             </ul>
         </div>
 
         <div class="content">
-            <div class="txt_title">工作经历</div>
+            <div class="txt_title">主要项目经历</div>
             <div class="line"></div>
 
             <div style="background-color: #F0F0F0; padding: 10px; margin-top: 10px;">
@@ -102,70 +106,76 @@
                     <p style="float: right;">2015年7月 - 2019年10月</p>
                 </div>
                 <div style="margin-top: 3px; font-weight: 600">
-                    <p style="display: inline;">服务器工程师</p>
+                    <p style="display: inline;">后端开发工程师</p>
                     <p style="float: right;">深圳</p>
                 </div>
-                <p style="margin-top: 5px;">主要职责：根据项目需求设计和开发物联网管理平台，以及技术文档的编写和维护</p>
-                <h4>项目名称1</h4>
+                <p style="margin-top: 5px;">主要职责：物联网数据管理平台的开发和维护，以及平台相关文档的编写</p>
+                <h4>物联网数据流处理平台</h4>
                 <ul>
-                    <li>负责驱动层的设计与开发，使用python Django框架开发</li>
-                    <li>负责代理层的维护和开发，使用uwsgi进行并发，通过消息队列进行异步处理，并解决上下游之间的耦合，</li>
-                    <li>使用haproxy来对代理层进行负载均衡</li>
+                    <li>该平台是一个基于数据流处理的开发平台，同时也是一个数据展示平台。主要功能是通过拖拽连接几个功能节点即可实现指定的功能需求，具体可参考 url。</li>
+                    <li>参与了项目架构设计，以及几个功能节点的前后端的开发维护。</li>
+                    <li>根据各个节点的功能将节点拆分成小应用，减小业务模块之间的资源耦合，同时引入RabbitMQ进行各应用间的数据分发。</li>
+                    <li>负责MQTT服务器(EMQX)的集群配置部署，使用haproxy进行负载均衡。同时负责MQTT插件(设备连接认证、设备动态数据的维护，以及设备上传数据的存储)的开发维护。</li>
+                    <li>通过将部分数据导入到elasticsearch，然后使用kibana做数据看板展示</li>
                 </ul>
-                <h4>项目名称2</h4>
+                <h4>小型ERP APP开发</h4>
                 <ul>
-                    <li>负责驱动层的设计与开发，使用python Django框架开发</li>
-                    <li>负责代理层的维护和开发，使用uwsgi进行并发，通过消息队列进行异步处理，并解决上下游之间的耦合，</li>
-                    <li>使用haproxy来对代理层进行负载均衡</li>
-                </ul>
-                <h4>项目名称3</h4>
-                <ul>
-                    <li>负责驱动层的设计与开发，使用python Django框架开发</li>
-                    <li>负责代理层的维护和开发，使用uwsgi进行并发，通过消息队列进行异步处理，并解决上下游之间的耦合，</li>
-                    <li>使用haproxy来对代理层进行负载均衡</li>
+                    <li>作为组长负责该项目的开发管理工作</li>
+                    <li>参入了需求分析设计方案可行性，制定开发任务和计划，使用gitlab、docker协助持续集成与自动化部署</li>
+                    <li>作为主要工程师参入开发了其中的主要功能模块</li>
                 </ul>
             </div>
         </div>
+
         <div style="background-color: #F0F0F0; padding: 10px;margin-top: 10px;">
             <div style="margin-top: 5px; font-weight: 600">
-                <p style=" display: inline; ">深圳大数点科技有限公司</p>
-                <p style="float: right; ">2015年7月 - 2019年10月</p>
+                <p style=" display: inline; ">深圳宇泰科技有限公司</p>
+                <p style="float: right; ">2019年10月至今</p>
             </div>
             <div style="margin-top: 3px;font-weight: 600 ">
-                <p style="display: inline; ">服务器工程师</p>
+                <p style="display: inline; ">后端开发工程师</p>
                 <p style="float: right; ">深圳</p>
             </div>
-            <p style="margin-top: 5px; ">主要职责：根据项目需求设计和开发物联网管理平台，以及技术文档的编写和维护</p>
-            <h4>项目名称1</h4>
+            <p style="margin-top: 5px; ">主要职责：负责软件项目的技术实现</p>
+            <h4>物联网数据管理平台</h4>
             <ul>
-                <li>负责驱动层的设计与开发，使用python Django框架开发</li>
-                <li>负责代理层的维护和开发，使用uwsgi进行并发，通过消息队列进行异步处理，并解决上下游之间的耦合，</li>
-                <li>使用haproxy来对代理层进行负载均衡</li>
-            </ul>
-            <h4>项目名称2</h4>
-            <ul>
-                <li>负责驱动层的设计与开发，使用python Django框架开发</li>
-                <li>负责代理层的维护和开发，使用uwsgi进行并发，通过消息队列进行异步处理，并解决上下游之间的耦合，</li>
-                <li>使用haproxy来对代理层进行负载均衡</li>
-            </ul>
-            <h4>项目名称3</h4>
-            <ul>
-                <li>负责驱动层的设计与开发，使用python Django框架开发</li>
-                <li>负责代理层的维护和开发，使用uwsgi进行并发，通过消息队列进行异步处理，并解决上下游之间的耦合，</li>
-                <li>使用haproxy来对代理层进行负载均衡</li>
+                <li>MQTT集群服务器的搭建和维护，数据写入插件的实现。负责设计和硬件端的数据交互接口以及文档编写</li>
+                <li>使用django web框架，在内网搭建yapi来管理api接口文档，按照restful风格设计API接口</li>
+                <li>使用redis做数据缓存，优化api的响应速度，同时使用了redis的pub/sub功能打通和其他应用的数据交互</li>
+                <li>负责前后端服务的docker容器化，gitlab的自动化打包部署</li>
+                <li>引入traefik做为反向代理服务，优化项目部署</li>
             </ul>
         </div>
-        <div class="content">
-            <div class="txt_title">个人评价</div>
-            <div class="line"></div>
-            <ul>
-                <li>做事认真负责，有条理有计划的完成工作任务</li>
-                <li>喜欢接受新事物、学习能力强，有时会去完成一些前端、移动端APP的工作，热爱编程。</li>
-            </ul>
-        </div>
-        <div style="width: 100%;height:125px"></div>
-    </div>
 
+        <div class="content">
+            <div class="txt_title">个人项目</div>
+            <div class="line"></div>
+            <div style="background-color: #F0F0F0; padding: 10px; margin-top: 10px;">
+                <div style="margin-top: 3px; font-weight: 600">
+                    <p style="display: inline;">微信小程序：人生结绳记</p>
+                </div>
+                <p style="margin-top: 5px;">主要功能：记录人生成长节点</p>
+                <ul>
+                    <li>该项目是个人业余时间从0开发的一个记录工具类的微信小程序</li>
+                    <li>使用微信原生开发，后端使用微信云开发</li>
+                    <li>该小程序已经发发布上线，欢迎微信搜索"人生结绳记"使用体验 : )</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="skill">
+        <div class="txt_title">个人评价</div>
+        <div class="line"></div>
+        <ul>
+            <li>目前在深圳工作，寻求武汉返乡发展机会</li>
+            <li>我对自己的定位: 主攻后端，同时在其他方面打打辅助。我不希望过于依赖别人，即使在没有前端的情况下，我依然想要把产品做到完美。同时努力向全栈的方向迈进！</li>
+            <li>我的优势: 热爱技术、自学能力强，有良好的自我认知。良好的心态、情商与沟通能力。</li>
+        </ul>
+    </div>
+    <div style="width: 100%;height:125px"></div>
+
+
+    </div>
 
 
 
