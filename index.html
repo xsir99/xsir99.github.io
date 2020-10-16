@@ -27,7 +27,6 @@
         .txt_title {
             font-weight: 800;
             font-size: 18px;
-            margin-top: 20px;
             margin-bottom: 10px;
         }
 
@@ -105,16 +104,17 @@
             <div class="txt_title">主要项目经历</div>
             <div class="line"></div>
 
-            <div style=" padding: 10px; margin-top: 10px;">
+            <div style="margin-top: 10px;">
                 <div style="font-weight: 600">
                     <p style="display: inline;">深圳大数点科技有限公司</p>
                     <p style="float: right;">2015年7月 - 2019年10月</p>
                 </div>
-                <div style="margin-top: 3px; font-weight: 600">
-                    <p style="display: inline;">后端开发工程师</p>
-                    <p style="float: right;">深圳</p>
+                <div style="margin-top: 5px;font-weight: 600 ">
+                    <p style="display: inline; ">后端开发工程师</p>
+                    <p style="float: right; ">深圳</p>
+                    <p style="margin-top: 5px; margin-bottom: 15px; font-weight: 400">主要职责：软件技术开发，以及相关文档的编写</p>
+    
                 </div>
-                <p style="margin-top: 5px;">主要职责：数据流管理平台的开发和维护，以及平台相关文档的编写</p>
                 <h4>数据流处理平台</h4>
                 <ul>
                     <li>该平台是一个基于数据流处理的开发平台，同时也是一个数据展示平台。主要功能是通过拖拽连接几个功能节点即可实现指定的功能需求，具体产品功能可参考DEMO <a
@@ -126,46 +126,54 @@
                 </ul>
                 <h4>小型ERP APP开发</h4>
                 <ul>
-                    <li>作为组长负责该项目的开发管理工作</li>
-                    <li>参入了需求分析设计方案可行性，制定开发任务和计划，使用gitlab、docker协助持续集成与自动化部署</li>
-                    <li>参入开发了其中的功能模块, 用户登陆注册，物料出库入库，订单管理，短信集成等等</li>
+                    <li>作为组长负责该项目的整个开发管理工作</li>
+                    <li>参入了需求分析设计，制定开发任务和测试计划，项目过程中对整体进度的把控</li>
+                    <li>参入开发了其中部分后端功能模块, 用户登陆注册，物料出库入库，订单管理，短信集成等等</li>
+                    <li>项目整体是前后端分离的，后端使用Djiango框架提供API服务，数据库使用PostgreSQL和Redis</li>
+                    <li>项目代码通过Gitlab维护，同时通过Gitlab CI/CD实现代码提交后自动化部署，我也负责整个项目前后端部署发布</li>
                 </ul>
             </div>
         </div>
 
-        <div style=" padding: 10px;">
+        <div>
             <div style="font-weight: 600">
                 <p style=" display: inline; ">深圳宇泰科技有限公司</p>
                 <p style="float: right; ">2019年10月至今</p>
             </div>
-            <div style="margin-top: 3px;font-weight: 600 ">
+            <div style="margin-top: 5px;font-weight: 600 ">
                 <p style="display: inline; ">后端开发工程师</p>
                 <p style="float: right; ">深圳</p>
+                <p style="margin-top: 5px; margin-bottom: 15px; font-weight: 400">主要职责：负责软件项目的技术实现以及服务器的运维</p>
+
             </div>
-            <p style="margin-top: 5px; ">主要职责：负责软件项目的技术实现</p>
             <h4>传输箱管理平台</h4>
-            <p>主要职责：负责软件项目的技术实现</p>
             <ul>
-                <li>MQTT集群服务器的搭建和维护，数据写入插件的实现。负责设计和硬件端的数据交互接口以及文档编写</li>
-                <li>使用django web框架，在内网搭建yapi来管理api接口文档，按照restful风格设计API接口</li>
+                <li>该项目是一个硬件管理平台，包括对传输箱的直接控制，开关风扇、开关箱门、开关电源、添加摄像头等等。传输箱的数据统计分析，是否在线、工作电压电流功率、箱内温湿度，发生报警等等，传输箱的固件升级。同时也有常用的用户系统、权限系统、报警系统、日志系统。</li>
+                <li>该项目我负责整体架构设计，硬件数据上传下发，数据存储缓存，Web后端API</li>
+                <li>Web前后端分离，后端使用django，API接口文档管理使用yapi，按照restful风格设计API接口</li>
                 <li>使用redis做数据缓存，优化api的响应速度，同时使用了redis的pub/sub功能打通和其他应用的数据交互</li>
-                <li>负责前后端服务的docker容器化，gitlab的自动化打包部署</li>
-                <li>引入traefik做为反向代理服务，优化项目部署</li>
+                <li>引入traefik做为反向代理服务，优化项目部署，同时提供免费且自动续签的Let's Encrypt证书实现https服务</li>
+                <li>同时也负责前后端服务的docker容器化，gitlab的自动化打包部署, 整个项目的运维部署</li>
+            </ul>
+            <h4>网络管理软件</h4>
+            <ul>
+                <li>该项目是一个跨平台的网络设备管理PC软件。该软件主要是用于公司开发的一台交换机的管理，主要功能包括交换机的发现，网络拓扑图、修改ip、解决IP冲突问题、升级固件等等功能</li>
+                <li>技术上基于electronjs开发。整个软件的后端逻辑主要有我负责，涉及到snmp协议用于设备发现、arp协议去解决ip冲突下的设备查找、tftp协议实现交换机的固件升级</li>
+                <li>后端使用nodejs编程，我也是现学现用。软件开发时会设计到很多硬件方面的网络知识，上面所说的协议也是从零开始了解，遇到问题查找相关资料，一个个攻破。开发这个软件收获了很多新的知识</li>
             </ul>
         </div>
 
         <div class="content">
             <div class="txt_title">个人项目</div>
             <div class="line"></div>
-            <div style=" padding: 10px; margin-top: 10px;">
+            <div style=" margin-top: 10px;">
                 <div style="margin-top: 3px; font-weight: 600">
                     <p style="display: inline;">微信小程序：人生结绳记</p>
                 </div>
-                <p style="margin-top: 5px;">主要功能：记录人生成长节点</p>
                 <ul>
-                    <li>该项目是个人业余时间从0开发的一个记录工具类的微信小程序</li>
-                    <li>使用微信原生开发，后端使用微信云开发</li>
-                    <li>该小程序已经发发布上线，欢迎微信搜索"人生结绳记"使用体验 : )</li>
+                    <li>该小程序是自己业余时间开发的一个记录生活类小工具，想法来自一个朋友，由我来开发实现</li>
+                    <li>使用微信原生开发，服务端使用微信云开发</li>
+                    <li>该小程序已经发布上线，欢迎微信搜索"人生结绳记"使用体验 : )</li>
                 </ul>
             </div>
         </div>
@@ -174,14 +182,13 @@
         <div class="txt_title">其他</div>
         <div class="line"></div>
         <ul>
-            <li>目前在深圳工作，寻求武汉返乡发展机会</li>
-            <li>自我认知: 主要往后端技术方向发展，技术深度需要进一步提高。也热爱学习新的技术知识，提高技术广度。热衷于开发和寻找一些小工具提高工作或生活中的效率。</li>
-            <li>我的优势: 热爱技术、自学能力强，有良好的自我认知。良好的心态、情商与沟通能力。</li>
+            <li>工作期间做过的项目多比较杂，这里只列举其中几个</li>
+            <li>目前我还在深圳工作，寻求武汉返乡工作机会</li>
+            <li>期待您的回复！</li>
+            <!-- <li>自我认知: 主要往后端技术方向发展，技术深度需要进一步提高。也热爱学习新的技术知识，提高技术广度。热衷于开发和寻找一些小工具提高工作或生活中的效率。</li> -->
         </ul>
     </div>
     <div style="width: 100%;height:125px"></div>
-
-
     </div>
 
 
